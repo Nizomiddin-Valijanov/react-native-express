@@ -24,10 +24,11 @@ export default function MainContainer() {
       <Tab.Navigator
         initialRouteName={homeName}
         screenOptions={({ route }) => ({
+          tabBarStyle: { height: 55, paddingTop: 2 },
           tabBarIcon: ({ focused, color, size }) => {
             let iconsName;
             let rn = route.name;
-
+            size = 22;
             if (rn === homeName) {
               iconsName = <Octicons name={"home"} size={size} color={color} />;
             } else if (rn === searchName) {
@@ -55,7 +56,6 @@ export default function MainContainer() {
                 <EvilIcons name={"user"} size={size} color={color}></EvilIcons>
               );
             }
-
             return iconsName;
           },
           headerShown: false,

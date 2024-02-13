@@ -4,11 +4,12 @@ export const css = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#f0eff4",
-    // marginTop: 25,
     overflow: "visible",
+    width: "100%",
   },
 
   navbar: {
+    position: "relative",
     backgroundColor: "#fff",
     paddingHorizontal: 10,
     top: 0,
@@ -17,7 +18,7 @@ export const css = StyleSheet.create({
     width: "100%",
     height: 100,
     paddingVertical: 8,
-    // marginTop: 35,
+    paddingTop: 30,
   },
 
   location_navbar: {
@@ -41,7 +42,6 @@ export const css = StyleSheet.create({
     paddingHorizontal: 10,
     borderRadius: 7,
     gap: 10,
-    // marginTop: 5,
   },
 
   navbar_input: {
@@ -56,7 +56,6 @@ export const css = StyleSheet.create({
     height: 90,
   },
   first_slider: {
-    // marginTop: 115,
     marginTop: 15,
     zIndex: 1,
   },
@@ -109,5 +108,55 @@ export const css = StyleSheet.create({
 
   filter_text: {
     fontSize: 16,
+  },
+
+  cards_item: {
+    paddingBottom: 20,
+  },
+
+  company_card: {
+    marginHorizontal: 15,
+    overflow: "hidden",
+    backgroundColor: "white",
+    borderRadius: 9,
+    marginTop: 15,
+  },
+
+  card_img: {
+    width: "100%",
+    height: 200,
+    objectFit: "cover",
+  },
+
+  text_company_card: {
+    paddingHorizontal: 15,
+    paddingTop: 10,
+    position: "relative",
+  },
+  card_header_company: {
+    fontSize: 25,
+    fontWeight: "700",
+  },
+  about_company: {
+    paddingTop: 4,
+  },
+  filters_of_company: {
+    color: "#7b7b7b",
+    fontSize: 14,
+  },
+
+  rating: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 5,
+    paddingTop: 15,
+    paddingBottom: 15,
+  },
+
+  like_card: {
+    position: "absolute",
+    right: 15,
+    top: 14,
   },
 });
